@@ -1,0 +1,308 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "space mono";
+    font-size: 12px;
+}
+
+.logo{
+    width:50px;
+    height:40px;
+    padding-top:100px;
+    margin-bottom:50px;
+}
+
+#custom-bill-input:hover::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+#custom-bill-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+#bill_amount{
+    background-image: url("icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position:10px;
+}
+
+#number-of-people{
+    background-image:url("icon-person.svg");    
+    background-repeat:no-repeat;
+    background-position: 10px;
+}
+
+h5{
+    padding:0px;
+    margin:0px;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 20px 0;
+}
+
+.tip-container{
+    background-color:hsl(185, 41%, 84%);
+    height:100vh;
+    margin: 0px auto;  
+    width: 75%; 
+}
+
+.tip-device{
+    width: 600px;
+    height: 300px;
+    background-color:white;
+    border-radius: 25px;
+    margin: 0px auto;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-field{
+    border-radius: 10px;
+    background-color: hsl(189, 41%, 97%);
+    border:0px;
+    width:240px;
+    padding:8px;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-family: "space mono";
+}
+
+.input-field:hover{ 
+    cursor: pointer;
+    border: 1px solid hsl(183, 100%, 15%);
+}
+
+.bill-section{
+    width: 280px;
+    margin:25px;
+    height: 250px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tips{
+    background-color:hsl(183, 100%, 15%);
+    border-radius: 3px;
+    border:0px;
+    color:hsl(189, 41%, 97%);
+    font-size:15px;
+    font-weight: 400;
+    margin:5px;
+    width:25%;
+    font-family: "space mono";
+}
+
+.tip-buttons > button:focus{
+    color:hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+}
+
+input:focus{
+    border-color: hsl(183, 100%, 15%);
+    outline:0px;
+}
+
+.bill-input-area{
+    padding:1px auto;
+}
+
+.tip-calculate, .total-tip{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:25px;
+    align-items: center;
+}
+
+
+.tip-section{
+    width:250px;
+    background-color:hsl(183, 100%, 15%);
+    margin:25px 25px 25px 10px;
+    border-radius:15px;
+    height: 250px;
+}
+
+.custom-tip{
+    border:0px;
+    font-family:"space mono";
+    text-transform:capitalize;
+    color: hsl(183, 100%, 15%);
+    font-size: 12px;
+    border-radius: 3px;
+    width:23%;
+    text-align: right;
+    margin:5px;
+}
+
+.custom-tip:hover{
+    text-align: right;
+    background: hsl(185, 41%, 84%);
+    border:1px solid hsl(183, 100%, 15%);
+    color: hsl(183, 100%, 15%);
+}
+
+#validInput{
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-tip:focus{
+    text-align:right;
+    border: 1px solid hsl(183, 100%, 15%);
+    display: active;
+}
+
+.custom-tip:hover::placeholder{
+    color:hsl(185, 41%, 84%);
+    background-color: aliceblue;
+}
+
+input[id = "custom-bill-input"]::placeholder{
+    color:hsl(185, 41%, 84%);
+    text-align: right;
+}
+
+.tips:hover{
+    cursor: pointer;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-amount{
+   margin: 25px 15px 0 15px;
+   color:hsl(185, 41%, 84%);
+}
+
+.tip-amount > p{
+    color: hsl(185, 41%, 84%);
+    font-size:7px;
+}
+
+.tip{
+    color:hsl(185, 41%, 84%);
+    height:15px;
+}
+
+.reset-button{
+    position: relative;
+    margin-top:100px;
+    background-color:hsl(184, 14%, 56%);
+    border-radius: 3px;
+    border:0;
+    width:200px;
+    padding:8px 0;
+    text-transform: uppercase;
+    color:hsl(183, 100%, 15%);
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight:650;
+}
+
+.reset-button:hover{
+    cursor:pointer;
+    background-color: hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%);
+}
+
+p{
+    border:0;
+    margin:0;
+}
+
+.input-field::-webkit-inner-spin-button, .input-field::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+@media only screen and (max-width:800px){
+    .tip-container{
+        width:100%;
+        height: 100vh;
+    }
+    .tip-device{
+        width:75%;
+        height: 40%;
+    }
+    .bill-section{
+        width:40%;
+        height: 80%;
+    }
+
+    .tip-section{
+        width:40%;
+        height:80%;
+    }
+
+    .input-field{
+        width:80%;
+        font-size: 10px;
+    }
+
+    .reset-button{
+        width:80%;
+        /* margin-bottom:px; */
+        bottom:70px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .tip-container{
+        padding-top:0;
+        width:100%;
+        height: 100%;
+    }
+    .tip-device{
+        width:100%;
+        flex-direction: column;
+    }
+
+    .tip-section{
+        width:80%;
+        align-items: space-evenly;
+        height:200px;
+    }
+
+    .bill-section{
+        width:80%;
+        justify-content: space-around;
+        height: 300px;
+    }
+
+    .input-field{
+        width:90%;
+    }
+
+    .reset-button{
+        width:80%;
+        margin-bottom:0;
+        position:relative;
+        bottom: 50px;
+        left:15px;
+    }
+
+    .tips,.custom-tip{
+        width:45%;
+        padding:5px 0;
+    }
+
+    .custom-tip{
+        font-size: 15px;
+    }
+
+    .logo{
+        padding-top: 30px;
+        width:30%;
+        height:10%;
+    }
+}

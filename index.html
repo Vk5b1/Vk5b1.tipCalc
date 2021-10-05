@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width ,initial-scale = 1.0">
+        <title>Tip calculator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "index.css">
+    </head>
+
+    <body>
+
+        <div class = "tip-container">
+            <div class = "header"> 
+                <img src = "logo.svg" alt = "logo" class = "logo" />
+            </div>
+
+            <div class = "tip-device">
+
+                <div class = "bill-section">
+                    <div class = "bill-input-area">
+                        <h5 id = "bill_amount1">Bill</h5>
+                        <input type = "number" name = "bill" class = "input-field" id = "bill_amount" placeholder = "0" oninput = "printBill()" required/>
+                    </div>
+
+                    <div class = "select-tip">
+                        <div>
+                            <h5>Select Tip %</h5>
+                        </div>
+                        <div class = "tip-buttons">
+                            <button type = "button" name = "tip" class="tips" id="tip-amount-1">5%</button>
+                            <button type = "button" name = "tip" class="tips" id="tip-amount-2" >10%</button>
+                            <button type = "button" name = "tip" class="tips" id="tip-amount-3" >15%</button>
+                            <button type = "button" name = "tip" class="tips" id="tip-amount-4" >20%</button>
+                            <button type = "button" name = "tip" class="tips" id="tip-amount-5" >25%</button>  
+                            <!-- <input type = "button" name = "tip" value = "5%" class = "tips" id = "tip-amount"/>
+                            <input type = "button" name = "tip" value = "10%" class = "tips" id = "tip-amount"/>
+                            <input type = "button" name = "tip" value = "15%" class = "tips" id = "tip-amount"/>
+                            <input type = "button" name = "tip" value = "20%" class = "tips" id = "tip-amount"/>
+                            <input type = "button" name = "tip" value = "25%" class = "tips" id = "tip-amount"/> -->
+                            <input type = "number" name = "tip" placeholder="Custom" class = "custom-tip" id = "custom-bill-input" oninput = "customTip()" />
+                        </div>
+                    </div>
+
+                    <div class = "select-people">
+                        <div id = "validInput">
+                        <h5 id = "labelForPeople">Number of People</h5>
+                    </div>
+                        <input type = "number" name = "Members-count" placeholder="0" class = "input-field" id = "number-of-people" oninput = "findTip()" required />
+                    </div>
+                </div>
+
+                <div class = "tip-section">
+                    <div class="tip-calculate">
+                        <div class="tip-amount">
+                            <h5>Tip Amount</h5>
+                            <p>/ person</p>
+                        </div>
+                        <h1 class = "tip" id = "final-tip-amount">
+                            $0.00
+                        </h1>
+                    </div>
+
+                    <div class="total-tip">
+                        <div class="tip-amount">
+                            <h5>Total</h5>
+                            <p>/ person</p>
+                        </div>
+                        <h1 class = "total tip" id = "final_bill_amount">
+                            $0.00
+                        </h1>
+                    </div>
+
+                    <div class = "reset">
+                        <input type = "button" name = "reset" value = "reset" class = "reset-button" onclick="reset()" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script type = "text/javascript" src= "index.js"></script>
+    </body>
+</html>
